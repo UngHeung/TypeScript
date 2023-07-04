@@ -7,7 +7,7 @@ function add(num1: number, num2: number, isTrue: boolean, str1: string) {
     }
 }
 
-const num1: number = 10;
+const num1 = 10;
 const num2 = 5.5;
 const isConsole = true;
 const str1 = "결과 : ";
