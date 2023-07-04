@@ -1,6 +1,7 @@
 function add(num1: number, num2: number, isTrue: boolean, str1: string) {
+    const result = num1 + num2;
     if (isTrue) {
-        console.log(str1 + num1 + num2);
+        console.log(str1 + result);
     } else {
         return num1 + num2;
     }
