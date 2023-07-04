@@ -1,0 +1,17 @@
+{
+    "name": "001_typescript",
+    "version": "1.0.0",
+    "description": "TypeScript Study",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start" : "lite-server"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "install": "^0.13.0",
+        "lite-server": "^2.6.1",
+        "npm": "^9.7.2"
+    }
+}
