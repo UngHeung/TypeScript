@@ -15,6 +15,12 @@ const fruit: {
 const role: [number, string] = [1, "man"];
 const role2 = [2, "woman"];
 
+role[1] = 11;
+role2[1] = 22;
+
+let role3: [number, string];
+role3 = [3, "new man", "after 2000"];
+
 console.log(fruit.name);
 
 // 배열
