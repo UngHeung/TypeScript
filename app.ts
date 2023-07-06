@@ -56,3 +56,7 @@ function getPosition(part: { position: string }) {
 }
 
 console.log(getPosition(eye));
+
+let val: any;
+val = 1;
+val = "hi";
