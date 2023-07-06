@@ -37,12 +37,19 @@
 
 // enum 열거형
 
+enum Human {
+    HEAD,
+    BODY,
+    ARMS,
+    LEGS,
+}
+
 const eye = {
-    position: "head",
+    position: Human.HEAD,
 };
 
-function getPosition(part) {
-    if (part.position === "머리") {
+function getPosition(part: { position: number }) {
+    if (part.position === Human.HEAD) {
         return part.position;
     }
     return undefined;
