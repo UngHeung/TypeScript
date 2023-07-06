@@ -38,7 +38,7 @@
 // enum 열거형
 
 enum Human {
-    HEAD,
+    HEAD = 5,
     BODY,
     ARMS,
     LEGS,
