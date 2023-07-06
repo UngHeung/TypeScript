@@ -29,10 +29,10 @@
 // enum 열거형
 var Human;
 (function (Human) {
-    Human[Human["HEAD"] = 5] = "HEAD";
-    Human[Human["BODY"] = 6] = "BODY";
-    Human[Human["ARMS"] = 7] = "ARMS";
-    Human[Human["LEGS"] = 8] = "LEGS";
+    Human["HEAD"] = "\uBA38\uB9AC";
+    Human["BODY"] = "\uBAB8";
+    Human["ARMS"] = "\uD314";
+    Human["LEGS"] = "\uB2E4\uB9AC";
 })(Human || (Human = {}));
 var eye = {
     position: Human.HEAD,
