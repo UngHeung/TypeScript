@@ -1,10 +1,19 @@
 // 객체
 
-const fruit = {
+const fruit: {
+    name: string;
+    count: number;
+    colors: string[];
+    role: [number, string];
+} = {
     name: "Apple",
     count: 5,
     colors: ["red", "green"],
+    role: [2, "author"],
 };
+
+const role: [number, string] = [1, "man"];
+const role2 = [2, "woman"];
 
 console.log(fruit.name);
 
