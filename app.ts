@@ -1,7 +1,11 @@
 // union
 // 숫자, 혹은 문자열을 처리할 수 있는 함수
 
-function combine(input1: number | string, input2: number | string) {
+//type aliace
+// 타입을 변수에 넣어주는 느낌
+type Combineable = number | string;
+
+function combine(input1: Combineable, input2: Combineable) {
     let result;
 
     if (typeof input1 === "number" && typeof input2 === "number") {
