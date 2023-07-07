@@ -1,3 +1,6 @@
+let typescript: "typescript";
+let javascript: "javascript";
+
 function printString(str: string) {
     return str;
 }
