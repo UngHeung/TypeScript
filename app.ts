@@ -24,6 +24,8 @@ console.log(combineNumber);
 console.log(combineString);
 
 // 타입 알리어스 또다른 사용법
-function setUser(user: { id: string; pw: string }) {
+type User = { id: string; pw: string };
+
+function setUser(user: User) {
     //
 }
