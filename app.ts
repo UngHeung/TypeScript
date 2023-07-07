@@ -1,5 +1,5 @@
-let typescript: "typescript";
-let javascript: "javascript";
+let typescript: "typescript" | 0;
+let javascript: "javascript" | 1;
 
 function printString(str: string) {
     return str;
