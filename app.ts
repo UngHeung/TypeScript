@@ -22,7 +22,7 @@ console.log(returnUndefined("value")); // undefined
 
 let addValue: Function;
 addValue = printNumber;
-console.log(10);
+console.log(addValue(10));
 
 addValue = 10;
 

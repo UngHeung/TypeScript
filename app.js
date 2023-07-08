@@ -1,16 +1,25 @@
-// union
-// 숫자, 혹은 문자열을 처리할 수 있는 함수
-function combine(input1, input2) {
-    var result;
-    if (typeof input1 === "number" && typeof input2 === "number") {
-        result = input1 + input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+var typescript;
+var javascript;
+function printString(str) {
+    return str;
 }
-var combineNumber = combine(10, 20);
-var combineString = combine("wel", "come");
-console.log(combineNumber);
-console.log(combineString);
+function printNumber(num) {
+    return num.toString();
+}
+function nonPrintValue(val) {
+    console.log(val);
+}
+function returnUndefined(str) {
+    console.log(str);
+    return;
+}
+console.log(returnUndefined("value")); // undefined
+var addValue;
+addValue = printNumber;
+console.log(addValue(10));
+addValue = 10;
+function getAddintionalString(str1, str2) {
+    return str1 + str2;
+}
+var getAddintionalNumbers;
+getAddintionalNumbers = getAddintionalString;
