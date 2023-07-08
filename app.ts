@@ -5,7 +5,7 @@ function printString(str: string) {
     return str;
 }
 
-function pringNumber(num: number): string {
+function printNumber(num: number): string {
     return num.toString();
 }
 
@@ -19,3 +19,7 @@ function returnUndefined(str: string): undefined {
 }
 
 console.log(returnUndefined("value")); // undefined
+
+let addValue: Function;
+addValue = printNumber;
+console.log(10);
