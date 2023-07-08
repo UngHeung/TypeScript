@@ -32,3 +32,13 @@ function getAddintionalString(str1: string, str2: string) {
 
 let getAddintionalNumbers: (num1: number, num2: number) => number;
 getAddintionalNumbers = getAddintionalString;
+
+function handleAddNumber(num1: number, num2: number, callback: (res: number) => number) {
+    const result = num1 + num2;
+    return callback(result);
+}
+
+handleAddNumber(1, 2, (res) => {
+    console.log(res);
+    return res;
+});
