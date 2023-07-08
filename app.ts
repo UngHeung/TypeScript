@@ -25,3 +25,10 @@ addValue = printNumber;
 console.log(10);
 
 addValue = 10;
+
+function getAddintionalString(str1: string, str2: string) {
+    return str1 + str2;
+}
+
+let getAddintionalNumbers: (num1: number, num2: number) => number;
+getAddintionalNumbers = getAddintionalString;
