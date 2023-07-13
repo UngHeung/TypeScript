@@ -9,12 +9,9 @@ if (typeof userInput === "string") {
     userName = userInput;
 }
 
-function generateError(message: string, code: number): void {
+function generateError(message: string, code: number): never {
     throw { message: message, errorCode: code };
 }
-
-function func() {}
-console.log(func());
 
 const res = generateError("에러 발생", 500);
 console.log(res);
