@@ -1,25 +1,15 @@
-var typescript;
-var javascript;
-function printString(str) {
-    return str;
+// 어떤 타입을 할당할지 알 수 없음
+var userInput;
+var userName;
+userInput = "1";
+userInput = 1;
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-function printNumber(num) {
-    return num.toString();
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-function nonPrintValue(val) {
-    console.log(val);
-}
-function returnUndefined(str) {
-    console.log(str);
-    return;
-}
-console.log(returnUndefined("value")); // undefined
-var addValue;
-addValue = printNumber;
-console.log(addValue(10));
-addValue = 10;
-function getAddintionalString(str1, str2) {
-    return str1 + str2;
-}
-var getAddintionalNumbers;
-getAddintionalNumbers = getAddintionalString;
+function func() { }
+console.log(func());
+var res = generateError("에러 발생", 500);
+console.log(res);

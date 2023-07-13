@@ -13,4 +13,8 @@ function generateError(message: string, code: number): void {
     throw { message: message, errorCode: code };
 }
 
-generateError("에러 발생", 500);
+function func() {}
+console.log(func());
+
+const res = generateError("에러 발생", 500);
+console.log(res);
