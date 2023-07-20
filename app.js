@@ -1,11 +1,11 @@
-"use strict";
-class Department {
-    constructor(name) {
+var Department = /** @class */ (function () {
+    function Department(name) {
         this.name = name;
     }
-    describe() {
+    // method
+    Department.prototype.describe = function () {
         console.log("Department: " + this.name);
-    }
-}
-const accounting = new Department("Accounting");
-accounting.describe();
+    };
+    return Department;
+}());
+var accounting = new Department("Accounting");
