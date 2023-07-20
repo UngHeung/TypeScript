@@ -105,12 +105,10 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
-  // "exclude": [
-  //   // 컴파일하지 않을 파일
-  // ],
-  // "include": [
-  //   // 컴파일할 폴더
-  // ],
-  // "files": ["app.ts"]
+  },
+  "exclude": ["/prev"],
+  "include": [
+    // 컴파일할 폴더
+  ],
+  "files": ["app.ts"]
 }
