@@ -75,3 +75,21 @@ const numList2 = (...numbers:[number, number, number]) {
 
 // numList2(...numbers) // error
 numList2(...[1, 2, 3])
+
+/**
+ * destructuring assignment
+ */
+
+const values = ["hi!!", "hello!!"]
+const [hi, hello] = values;
+console.log(hi, hello) // hi!!hello!!
+
+const [] = values;
+
+const userInfo = {
+  userName: "Heung",
+  userAge: 30
+}
+
+const {userName, userAge} = userInfo;
+console.log(userName, userAge)
