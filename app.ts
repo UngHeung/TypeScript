@@ -61,3 +61,17 @@ const obj = {
 const newObj = { ...obj };
 
 console.log(newObj.name, newObj.age);
+
+const numList = (...numbers: number[]) => {
+  console.log(numbers);
+};
+
+// numList(numbers) // error
+numList(...numbers);
+
+const numList2 = (...numbers:[number, number, number]) {
+  console.log(numbers)
+}
+
+// numList2(...numbers) // error
+numList2(...[1, 2, 3])
