@@ -69,27 +69,27 @@ const numList = (...numbers: number[]) => {
 // numList(numbers) // error
 numList(...numbers);
 
-const numList2 = (...numbers:[number, number, number]) {
-  console.log(numbers)
-}
+const numList2 = (...numbers: [number, number, number]) => {
+  console.log(numbers);
+};
 
 // numList2(...numbers) // error
-numList2(...[1, 2, 3])
+numList2(...[1, 2, 3]);
 
 /**
  * destructuring assignment
  */
 
-const values = ["hi!!", "hello!!"]
+const values = ["hi!!", "hello!!"];
 const [hi, hello] = values;
-console.log(hi, hello) // hi!!hello!!
+console.log(hi, hello); // hi!!hello!!
 
 const [] = values;
 
 const userInfo = {
   userName: "Heung",
-  userAge: 30
-}
+  userAge: 30,
+};
 
-const {userName, userAge} = userInfo;
-console.log(userName, userAge)
+const { userName, userAge } = userInfo;
+console.log(userName, userAge);
