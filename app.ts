@@ -29,3 +29,12 @@ function f2() {
 
 // console.log(value2); // hello
 // global scope, JS = not error, TS = error
+
+/**
+ * arrow function
+ */
+const add = (age: number, year = 1) => age + year;
+console.log(add(myAge));
+
+const printName: (name: string) => void = (name) => console.log(name);
+printName(myName);
