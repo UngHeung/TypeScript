@@ -12,7 +12,7 @@
 
     /* Language and Environment */
     "target": "ES6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    // "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost"] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    // "lib": ["DOM", "ES2016", "DOM.Iterable", "ScriptHost"] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
     // "emitDecoratorMetadata": true,                    /* Emit design-type metadata for decorated declarations in source files. */
@@ -56,7 +56,7 @@
     // "inlineSourceMap": true,                          /* Include sourcemap files inside the emitted JavaScript. */
     // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
     // "outDir": "./",                                   /* Specify an output folder for all emitted files. */
-    // "removeComments": true,                           /* Disable emitting comments. */
+    "removeComments": true /* Disable emitting comments. */,
     // "noEmit": true,                                   /* Disable emitting files from a compilation. */
     // "importHelpers": true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
     // "importsNotUsedAsValues": "remove",               /* Specify emit/checking behavior for imports that are only used for types. */
@@ -105,12 +105,12 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  },
-  "exclude": [
-    // 컴파일하지 않을 파일
-  ],
-  "include": [
-    // 컴파일할 폴더
-  ],
-  "files": ["app.ts"]
+  }
+  // "exclude": [
+  //   // 컴파일하지 않을 파일
+  // ],
+  // "include": [
+  //   // 컴파일할 폴더
+  // ],
+  // "files": ["app.ts"]
 }
