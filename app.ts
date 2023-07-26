@@ -1,15 +1,7 @@
-class Department {
-  // this -> Department
-  name: string;
+/**
+ * Generic
+ */
 
-  constructor(name: string) {
-    this.name = name;
-  }
-
-  // method
-  describe() {
-    console.log("Department: " + this.name);
-  }
+function add(val1, val2) {
+  return val1 + val2;
 }
-
-const accounting = new Department("Accounting");
